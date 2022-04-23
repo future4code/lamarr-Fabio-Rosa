@@ -33,13 +33,19 @@ console.log(resultado)
 
 
 // EXERCÍCIO 02
-function imprimeIdade() {
+function imprimeIdade(ano1, ano2) {
   // implemente sua lógica aqui
+
+let anoAtual = Number(prompt("digite o ano atual"))
+let anoNasc = Number(prompt("digite seu ano de nascimento"))
+  console.log(anoAtual - anoNasc)
 }
 
+ imprimeIdade
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
+  return peso / (altura * altura)
 
 }
 
