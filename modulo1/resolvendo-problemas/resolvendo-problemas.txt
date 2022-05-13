@@ -1,0 +1,13 @@
+- **Exercícios de fixação do conhecimento**
+QUESTÂO 1 - Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+
+
+Ter Atenção no Enunciado ,anotar o que o código deve fazer, quais as informações importantes .
+Retirar informações relevantes , possiveis variasveis , palavras chaves que podem ser usadas no codigo,verbos e condições.
+Pensar nas entradas e Saídas, quais dados serão recebidos ,pensar nas entradas e saidas da funcão criada.
+Fazer um Esquema Visual , situações , montar diagramas , colocar em um papel para melhoras a vizualição.
+Criar um codigo mesmo que Feio, no papel ou VS , começar a testar possiveis soluções.
+Testar o codigo no progama , passar para linguagem desejada.
+Refatorar o codigo ,verificar os nomes de variaveis e funções se fazem sentido , separar as funções se necessario , verificar as etpas principais.
+
