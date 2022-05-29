@@ -47,7 +47,7 @@ alert("Boas vindas ao jogo de Blackjack!")
    let totalUsuario = primeiraCartaUsuario.valor + segundaCartaUsuario.valor
    let totalComputador = primeiraCartaComputador.valor + segundaCartaComputador.valor
 
-   
+   console.log("Bem vindo ao Black Jack(21)!")
 
    console.log(`Usuário: cartas ${primeiraCartaUsuario.texto} ${segundaCartaUsuario.texto} - pontuação: ${totalUsuario}`)
    console.log(`Computador: cartas ${primeiraCartaComputador.texto} ${segundaCartaComputador.texto} - pontuação: ${totalComputador}`)
