@@ -1,0 +1,47 @@
+
+table#alter tr td { /* Toda a tabela com fundo creme */
+	background: rgba(248, 248, 245, 0.959);
+    } 
+
+table#alter tr.dif td {
+	background: rgba(219, 219, 16, 0.959);
+    }
+
+
+h1{
+    display: inline-block;
+        color:rgba(23, 43, 160, 0.959);
+       
+        }
+
+
+
+body{
+    background: rgba(224, 233, 230, 0.959);
+}
+
+h2{
+    
+    color:rgba(218, 94, 22, 0.959);
+    
+}
+
+ul{
+    color:rgba(23, 43, 160, 0.959);
+    font-size: 20px;
+}
+
+th{
+    color:rgba(23, 43, 160, 0.959);
+}
+
+strong{
+    color:rgba(23, 43, 160, 0.959);
+    font-size: 30px;
+}
+Button{
+    color:rgba(218, 94, 22, 0.959);
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+}
