@@ -1,0 +1,286 @@
+
+body {
+    font-family: 'styles', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #dce0de;
+    }
+
+.menu-items{
+    position: fixed;
+    top: 0;
+    margin-top: 1rem;
+}
+nav {
+	width: 400px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	font-size: 15px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+    color: #dce0de;
+	cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 120px;
+}
+a:nth-child(5) {
+	width: 100px;
+}
+
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 238, 0, 0.87);
+    background-image: url(./imagens/nuvemNOVA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+}
+.black {
+    background-image: url(./imagens/blackjack.jpg);
+    display: inline-block;
+    width: 60px;
+}
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display:flex;
+}
+.social-media a {
+    text-decoration: none;
+    color: #dce0de;
+    padding: 1rem 4rem;
+    border: 1px solid #dce0de;
+    min-width: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    background-color: aliceblue;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.texto1 {
+    color: black;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 40%;
+    margin: auto;
+       }
+/*
+Light 300
+Regular 400
+SemiBold 600
+font-weight:
+*/
+ .container {
+     height: auto;
+     width: 100%;
+     flex-direction: column;
+     justify-content: space-evenly;
+     margin: 3rem 0;
+ }
+ .card-container {
+    display: inline-block
+    
+ }
+
+ .card {
+     width: 300px;
+     height: 300px;
+     border-radius: 100%;
+     margin: 3rem 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: aqua;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     filter: grayscale(0.5);
+     color: #dce0de;
+     cursor: pointer;
+     transition: 0.5s ease-in-out;
+ }
+
+ #card2 {
+     background-image: url(./imagens/blackjack.jpg);
+ }
+
+ #card1 {
+     background-image: url(./imagens/suplementos.jpg);
+ }
+ 
+ .card-wrapper {
+     text-align: center;
+     display: contents;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+ .card-wrapper::before {
+     
+     position: absolute;
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     display: block;
+     border: 1px solid #dce0de;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+ }
+
+ .card-wrapper h2 {
+     font-size: 40px;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     margin: 0;
+     transition: 0.5s ease-in-out;
+ }
+
+ .card-wrapper p {
+     font-size: 0;
+     visibility: visible;
+     opacity: 0;
+     font-weight: bold;
+     text-transform: uppercase;
+     transition: 0.5s ease-in-out;
+ }
+
+ p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 40%;
+    margin: auto;
+    color: black;
+       }
+.textoh {
+    opacity: 0;
+    line-height: 50px;
+	font-size: 15px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+    color: #dce0de;
+	cursor: pointer;
+    transition: .5s ease-in-out;
+ }
+ 
+ .card:hover {
+     filter: unset;
+ }
+
+ .card:hover > .card-wrapper::before {
+     height: 200px;
+     width: 200px;
+     opacity: 1;
+ }
+
+ .card:hover > .card-wrapper p {
+     opacity: 1;
+     visibility: visible;
+     font-size: 14px;
+ }
+
+ .footer {
+     width: 100%;
+     height: 70px;
+     background-color: rgb(25, 69, 212);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #dce0de;
+ }
+
+ .minitexto {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 40%;
+    margin: auto;
+    color: rgb(11, 11, 17);
+ }
+
+.bt {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 10%;
+    margin: auto;
+    color: rgb(11, 11, 17);
+    background-color: rgb(53, 129, 228);
+
+}
+
+.bt:hover {
+        background-color: rgb(255, 242, 240);
+        transition: 0.5s ease-in-out;
+}
+
+.textoblack-b {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 60%;
+    margin: auto;
+    color: black;
+}
+
+.jogoteste {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 10%;
+    margin: auto;
+    background-color: rgb(210, 210, 218);
+    color: #415cf3;
+    border: 3px solid #f0eded;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+
+    
