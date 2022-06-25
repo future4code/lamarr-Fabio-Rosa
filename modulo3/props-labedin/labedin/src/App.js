@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
-import Imgs from './components/img/minhafoto.jpg';
+import Img from './components/Img/minhafoto.jpg';
 import CardPequeno from './components/CardPequeno/CardPequeno';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="./components/img/minhafoto.jpg" 
+          imagem="{minhafoto.jpg}" 
           nome="Fábio Alves" 
           descricao="Oi, eu sou o Fabio. Sou Aluno da Labenu. estou aprendendo muitas coisas novas usando React ."
         />
