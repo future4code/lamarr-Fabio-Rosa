@@ -1,0 +1,19 @@
+.pcard-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+
+.pcard-container {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.pcard-container > div {
+    display: flex;
+    align-items: center;
+}
