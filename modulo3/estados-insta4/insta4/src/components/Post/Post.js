@@ -14,39 +14,53 @@ function Post(props){
   const [curtido, setCurtido] = useState(false)
   const [comentando, setComentando] = useState(false)
   const [numeroComentarios, setNumeroComentarios] = useState(0)
+  const [coment,setComent]=useState("") 
 
   const onClickCurtida = () => {
+    setCurtido(!curtido) 
     console.log('Curtiu!')
+    if (!curtido){
+      setnumeroCurtidas(numeroCurtidas+1)  
+    }else{
+      setnumeroCurtidas(numeroCurtidas-1) 
+    }
   }
   
   const onClickComentario = () => {
     setComentando(!comentando)
-    if(comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
-    }
     console.log(comentando)
   }
   
+  //função ativada pelo botão enviar da seção comentário
   const aoEnviarComentario = () => {
     setComentando(false)
-    setNumeroComentarios(numeroComentarios + 1)
+    if (coment!==""){ //-->Testa se comentario não esta vazio
+      setNumeroComentarios(numeroComentarios + 1) //--> Atualiza numero comentarios
+    }
+    setComent("") // --> esvazia comentário 
   }
-
+  
+  // Função que atualiza valor do comentário ao ser digitado pegando o valor do <input> - e.target.value
+  const handleInputComent=(e)=>{
+    setComent(e.target.value) //--> Atualiza valor de coment digitado pelo usuario
+    console.log(coment);
+  }
+//seleciona icone de acordo com curtido
   let iconeCurtida
-
-    if(curtido) {
-      iconeCurtida = iconeCoracaoPreto
-    } else {
-      iconeCurtida = iconeCoracaoBranco
+  if(curtido) {
+    iconeCurtida = iconeCoracaoPreto
+  } else {
+    iconeCurtida = iconeCoracaoBranco
+  }
+  
+  //gera componte Seça~Comentarios e passa os atributos para props!
+  let componenteComentario
+  if(comentando) {
+      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario} onChangeComentario={handleInputComent} valor={coment}/>
     }
-
-    let componenteComentario
-
-    if(comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
-    }
-
+    
   return(
+
     <div className = 'PostContainer'>
       <div className = 'PostHeader'>
         <img className = 'UserPhoto' src={props.fotoUsuario} alt={'Imagem do usuario'}/>
@@ -69,6 +83,7 @@ function Post(props){
         />
       </div>
       {componenteComentario}
+
     </div>
   )
 }
