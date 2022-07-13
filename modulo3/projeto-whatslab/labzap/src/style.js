@@ -38,4 +38,3 @@ export const AreaMensagem=styled.main`
     width: 400px;
   }
 `;
-
