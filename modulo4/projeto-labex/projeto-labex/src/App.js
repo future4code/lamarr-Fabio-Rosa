@@ -1,9 +1,12 @@
 import './App.css';
+import Rotas from './components/Rotas'
+
+
 
 function App() {
   return (
     <div className="App">
-        <h1>LAbex</h1>
+        <Rotas/>
 
     </div>
   );
